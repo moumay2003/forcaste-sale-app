@@ -1,0 +1,52 @@
+/* Base Icon Styles */
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Responsive Sidebar Adjustments */
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: sticky;
+    top: 48px; /* consistent spacing from the top */
+  }
+  .navbar-search {
+    display: block; /* ensures the search bar is visible on larger screens */
+  }
+}
+
+/* Sidebar Link Styles */
+.sidebar .nav-link {
+  font-size: .875rem;
+  font-weight: 500; /* medium font weight for better readability */
+  color: #333; /* default color, improves contrast */
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc; /* bright blue for active link, ensures visibility */
+}
+
+/* Sidebar Section Heading */
+.sidebar-heading {
+  font-size: .75rem;
+  color: #666; /* muted color for less emphasis */
+  text-transform: uppercase; /* increases readability */
+  margin-top: 1rem; /* space above section heading */
+  margin-bottom: .5rem; /* space below section heading */
+}
+
+/* Navbar Styling */
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .75); /* darker for better legibility */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25); /* subtler shadow */
+}
+
+/* Form Control within Navbar */
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-radius: .25rem; /* rounded edges */
+  border: 1px solid #ccc; /* defined border */
+}

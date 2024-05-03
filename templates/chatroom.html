@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="chat-container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send</button>
+    </form>
+    {% for message in messages %}
+    <div class="message">
+        <strong>{{ message.username }}</strong>: {{ message.body }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+
+
+{% block content %}
+    <h2>Chat Rooms</h2>
+    <ul>
+        {% for room in rooms %}
+            <li><a href="{% url 'room' room.id %}">{{ room.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
